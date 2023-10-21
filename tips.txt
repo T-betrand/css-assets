@@ -1,0 +1,20 @@
+! in html doc for template
+
+----------------------------------
+    display: flex;
+    align-items: center;
+    justify-content: center;
+-------------------------
+the above centers anything
+
+z-index moves things futher towards the screen
+
+
+
+to type multiple lines of similar code and increamental value 
+
+.item{Items $}*9
+provides html code with 9 divs of class item  and text items 1 to item 9
+
+shift alt down 
+copies and paste previous linne
