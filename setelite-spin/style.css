@@ -1,0 +1,45 @@
+@keyframes grow {
+    100% {
+        transform: rotate(360deg) scale(0.5);
+    }
+    50% {
+        transform: rotate(180deg) scale(1);
+    }
+    0% {
+        transform: rotate(0deg) scale(0.5);
+    }
+}
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex; 
+    align-items: center;
+    background-color: black;
+    overflow: hidden;
+}
+.satellite {
+    background-color: white;
+    height: 50px;
+    width: 40px;
+    margin: 70px;
+    position: relative;
+    transform-origin: bottom;
+    animation: grow 2s linear infinite;
+}
+.satellite::before{
+    content: "";
+    position: absolute;
+    background-color: #ff6d00;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    top:55px;
+}
+.satellite::after{
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 50px;
+    width: 40px;
+    top: 100px;
+}
